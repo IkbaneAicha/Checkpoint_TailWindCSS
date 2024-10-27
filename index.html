@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="stylesout.css" rel="stylesheet">
+
+</head>
+<body class="font-sans antialiased bg-gray-100 text-gray-800">
+
+    <!-- Header Section -->
+    <header class="bg-gray-900 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">My Portfolio</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+                    <li><a href="#skills" class="hover:text-blue-400">Skills</a></li>
+                    <li><a href="#projects" class="hover:text-blue-400">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="h-screen bg-contain bg-center flex items-center justify-center" style="background-image: url('/images/img.avif');">
+        <div class="text-center text-white">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">Hello, I'm IKBANE Aicha</h2>
+            <p class="text-lg md:text-xl">A passionate web developer & cybersecurity enthusiast</p>
+        </div>
+    </section>
+
+<!-- Skills Section -->
+<section id="skills" class="p-10 bg-gray-100 border-gray-800">
+    <h3 class="text-3xl font-semibold text-center mb-6">My Skills</h3>
+    <div class="container mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div class="bg-gray-800 text-gray-100 text-center p-6 rounded-lg shadow-lg transition transform hover:scale-105 hover:bg-gray-700 hover:text-yellow-400">
+            <p class="font-semibold text-lg tracking-wider">HTML</p>
+        </div>
+        <div class="bg-gray-800 text-gray-100 text-center p-6 rounded-lg shadow-lg transition transform hover:scale-105 hover:bg-gray-700 hover:text-yellow-400">
+            <p class="font-semibold text-lg tracking-wider">CSS</p>
+        </div>
+        <div class="bg-gray-800 text-gray-100 text-center p-6 rounded-lg shadow-lg transition transform hover:scale-105 hover:bg-gray-700 hover:text-yellow-400">
+            <p class="font-semibold text-lg tracking-wider">JavaScript</p>
+        </div>
+        <div class="bg-gray-800 text-gray-100 text-center p-6 rounded-lg shadow-lg transition transform hover:scale-105 hover:bg-gray-700 hover:text-yellow-400">
+            <p class="font-semibold text-lg tracking-wider">Bootstrap</p>
+        </div>
+        <div class="bg-gray-800 text-gray-100 text-center p-6 rounded-lg shadow-lg transition transform hover:scale-105 hover:bg-gray-700 hover:text-yellow-400">
+            <p class="font-semibold text-lg tracking-wider">Tailwind CSS</p>
+        </div>
+        <div class="bg-gray-800 text-gray-100 text-center p-6 rounded-lg shadow-lg transition transform hover:scale-105 hover:bg-gray-700 hover:text-yellow-400">
+            <p class="font-semibold text-lg tracking-wider">Node.js</p>
+        </div>
+        <div class="bg-gray-800 text-gray-100 text-center p-6 rounded-lg shadow-lg transition transform hover:scale-105 hover:bg-gray-700 hover:text-yellow-400">
+            <p class="font-semibold text-lg tracking-wider">Java</p>
+        </div>
+        <div class="bg-gray-800 text-gray-100 text-center p-6 rounded-lg shadow-lg transition transform hover:scale-105 hover:bg-gray-700 hover:text-yellow-400">
+            <p class="font-semibold text-lg tracking-wider">Python</p>
+        </div>
+    </div>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="p-6 bg-gray-100">
+        <h3 class="text-3xl font-semibold text-center mb-6">My Projects</h3>
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white rounded-lg shadow-lg p-4">
+                <img src="/images/aa.png" alt="Project 1" class="rounded-lg mb-4">
+                <h4 class="text-xl font-bold">NetMaster 🖥️</h4>
+                <p class="text-gray-600 mt-2">Take control of your network! Our app simplifies managing devices, offering real-time monitoring 📊, alerts 🔔, and effortless configuration—all in one sleek interface.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-4">
+                <img src="/images/e-comm.svg" alt="Project 2" class="rounded-lg mb-4">
+                <h4 class="text-xl font-bold">ShopSmart 🛒</h4>
+                <p class="text-gray-600 mt-2">Shop smart, shop easy! Discover endless products 🛍️, enjoy personalized deals 🎉, and secure checkout 🔒—all with just a few taps on our intuitive e-commerce app.</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-lg p-4">
+                <img src="/images/network.png" alt="Project 3" class="rounded-lg mb-4">
+                <h4 class="text-xl font-bold">StockMaster 📦</h4>
+                <p class="text-gray-600 mt-2">Streamline your inventory! Keep track of stock levels 📈, automate orders ⚙️, and analyze trends effortlessly, ensuring you’re always ready to meet customer demands.</p>
+            </div>
+        </div>
+    </section>
+
+ <!-- Contact Form -->
+<section id="contact" class="p-10 bg-gray-100">
+    <h3 class="text-3xl font-semibold text-center text-gray-100 mb-10">Contact Me</h3>
+    <div class="container mx-auto max-w-md">
+        <form class="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <label for="name" class="block text-gray-100 font-medium mb-2">Name</label>
+            <input type="text" id="name" class="w-full p-3 bg-gray-700 border border-gray-600 text-gray-100 rounded mb-4 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="Your name">
+            
+            <label for="email" class="block text-gray-100 font-medium mb-2">Email</label>
+            <input type="email" id="email" class="w-full p-3 bg-gray-700 border border-gray-600 text-gray-100 rounded mb-4 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="Your email">
+            
+            <label for="message" class="block text-gray-100 font-medium mb-2">Message</label>
+            <textarea id="message" class="w-full p-3 bg-gray-700 border border-gray-600 text-gray-100 rounded mb-4 focus:outline-none focus:ring-2 focus:ring-yellow-400" placeholder="Your message"></textarea>
+            
+            <button type="submit" class="w-full bg-yellow-500 text-gray-900 font-semibold p-3 rounded hover:bg-yellow-600 transition duration-300">Send Message</button>
+        </form>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white p-4 text-center">
+        <p>&copy; 2024 IKBANE Aicha. All rights reserved.</p>
+        <div class="flex justify-center space-x-4 mt-2">
+            <a href="#" class="hover:text-blue-400">Twitter</a>
+            <a href="#" class="hover:text-blue-400">LinkedIn</a>
+            <a href="#" class="hover:text-blue-400">GitHub</a>
+        </div>
+    </footer>
+
+</body>
+</html>
